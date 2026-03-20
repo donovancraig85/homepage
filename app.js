@@ -1,3 +1,4 @@
+console.log("app.js loaded")
 // Load existing recipes or create empty array
 let recipes = JSON.parse(localStorage.getItem("recipes")) || [];
 
