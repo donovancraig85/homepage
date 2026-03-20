@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #fafafa;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px 15px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+ul li {
+  margin: 10px 0;
+  padding: 10px;
+  background: #f3f3f3;
+  border-radius: 6px;
+}
+  </style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Recipe Book</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>My Recipe Book</h1>
+
+  <!-- Add Recipe Form -->
+  <section class="card">
+    <h2>Add a Recipe</h2>
+    <input id="recipeName" type="text" placeholder="Recipe name">
+    <textarea id="recipeIngredients" placeholder="Ingredients (one per line)"></textarea>
+    <textarea id="recipeSteps" placeholder="Steps"></textarea>
+    <button id="saveRecipe">Save Recipe</button>
+  </section>
+
+  <!-- Search -->
+  <section class="card">
+    <h2>Search Recipes</h2>
+    <input id="searchInput" type="text" placeholder="Search by name or ingredient">
+  </section>
+
+  <!-- Results -->
+  <section id="recipeList" class="card">
+    <h2>Saved Recipes</h2>
+    <ul id="recipes"></ul>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
